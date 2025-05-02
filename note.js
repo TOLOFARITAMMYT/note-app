@@ -116,9 +116,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // Create a new context/tab
-    newTabBtn.addEventListener('click', function() {
+    newTabBtn.addEventListener('click', function( ) {
         const title = prompt('Enter a name for the new context:');
-        
+         
         if (title && title.trim() !== '') {
             const id = 'context-' + Date.now();
             const newContext = { id, title, content: '' };
